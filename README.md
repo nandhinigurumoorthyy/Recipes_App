@@ -57,7 +57,7 @@ Postman is a tool to test RESTful APIs easily. Follow these steps:
      {
        "name": "Chocolate Cake",
        "ingredients": ["flour", "sugar", "cocoa"],
-       "instructions": "Mix and bake."
+       "description": "Mix and bake."
      }
      ```
 
@@ -74,7 +74,7 @@ Postman is a tool to test RESTful APIs easily. Follow these steps:
   {
     "name": "Pancakes",
     "ingredients": ["flour", "milk", "eggs"],
-    "instructions": "Mix ingredients and cook on a griddle."
+    "description": "Mix ingredients and cook on a griddle."
   }
   ```
 
@@ -85,7 +85,8 @@ Postman is a tool to test RESTful APIs easily. Follow these steps:
   ```json
   {
     "name": "Updated Pancakes",
-    "ingredients": ["flour", "milk", "eggs", "butter"]
+    "ingredients": ["flour", "milk", "eggs", "butter"],
+   "description": "Mix ingredients and cook on a griddle."
   }
   ```
 
