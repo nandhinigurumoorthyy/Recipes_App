@@ -1,8 +1,7 @@
 # Recipes App
 
 ## Introduction
-This project demonstrates the implementation of a RESTful API using **Node.js**, **Express**, and **MongoDB**. 
-The API supports CRUD (Create, Read, Update, Delete) operations and follows HTTPS methods.
+Develop a complete CRUD (Create, Read, Update, Delete) application for managing recipes using Node.js, Express.js, and Mongoose. The application should follow the MVC pattern and include comprehensive API documentation using Postman.
 
 ---
 
@@ -23,12 +22,6 @@ The API supports CRUD (Create, Read, Update, Delete) operations and follows HTTP
 - Install **Node.js** 
 - Install **MongoDB** and ensure the MongoDB service is running.
 - Install **Postman** for API testing.
-
-## MongoDB Overview
-MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It uses the following components:
-- **Database**: A container for collections.
-- **Collection**: A container for documents.
-- **Document**: A record with key-value pairs.
 
 ---
 
