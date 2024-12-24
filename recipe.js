@@ -1,13 +1,18 @@
 const mongoose = require("mongoose");
 
-const mongoDBURI = "mongodb://localhost:27017/recipes";
+// Use environment variable or fallback URI for local development
+const mongoDBURI = process.env.MONGO_URI || "mongodb://localhost:27017/recipes";
 
 async function createDbConnection() {
   try {
-      await mongoose.connect(mongoDBURI);
-      console.log("connection established !!!---")
+    await mongoose.connect(mongoDBURI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Database connection established successfully!");
   } catch (error) {
-    console.log(error.message);
+    console.error("Error connecting to the database:", error.message);
+    process.exit(1); // Exit the application if the database connection fails
   }
 }
 
